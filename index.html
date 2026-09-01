@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grok Bot Use Case Repository</title>
+  <style>
+    :root {
+      --bg: #0b0d10; --panel: #14181e; --panel2: #1b2129; --text: #e8edf4;
+      --muted: #9aa6b5; --accent: #7ee0a8; --accent2: #7ab8ff; --line: #2a3340; --chip: #243041;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a2a22 0%, transparent 50%),
+                  radial-gradient(900px 500px at 100% 0%, #152033 0%, transparent 45%),
+                  var(--bg);
+      color: var(--text); line-height: 1.45;
+    }
+    header { padding: 28px 16px 12px; max-width: 1180px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: -0.03em; }
+    .lede { color: var(--muted); max-width: 760px; font-size: 0.95rem; }
+    .stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+    .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 13px; color: var(--muted); }
+    .stat b { color: var(--accent); }
+    .controls { max-width: 1180px; margin: 0 auto; padding: 8px 16px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    input[type="search"], select {
+      background: var(--panel); border: 1px solid var(--line); color: var(--text);
+      border-radius: 10px; padding: 10px 12px; font-size: 16px;
+    }
+    input[type="search"] { flex: 1 1 220px; min-width: 160px; }
+    .grid { max-width: 1180px; margin: 0 auto 60px; padding: 0 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    article { background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+    article h2 { font-size: 1.02rem; margin: 0; letter-spacing: -0.02em; }
+    article p { margin: 0; color: #c5ced8; font-size: 0.92rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { background: var(--chip); color: var(--muted); border-radius: 999px; padding: 3px 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .chip.cat { color: var(--accent); }
+    .chip.src { color: var(--accent2); }
+    .chip.plug { color: #e6c07b; }
+    .who { font-size: 12px; color: var(--muted); }
+    .who a { color: var(--accent2); text-decoration: none; }
+    footer { max-width: 1180px; margin: 0 auto 40px; padding: 0 16px; color: var(--muted); font-size: 13px; }
+    .empty { grid-column: 1 / -1; color: var(--muted); padding: 40px 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grok Bot use case repository</h1>
+    <p class="lede">Collected from 13 influencer giveaway threads on X plus verified setups on grokbot.dev. Search and filter on your phone.</p>
+    <div class="stats">
+      <div class="stat"><b id="count">0</b> use cases</div>
+      <div class="stat">13 giveaway hosts</div>
+      <div class="stat">31 Aug 2026</div>
+    </div>
+  </header>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search use cases, people, tools…" />
+    <select id="cat"><option value="">All categories</option></select>
+    <select id="kind">
+      <option value="">All sources</option>
+      <option value="curated">Curated / verified</option>
+      <option value="giveaway">Giveaway replies</option>
+      <option value="influencer">Influencer examples</option>
+    </select>
+    <select id="plugin">
+      <option value="">All plugins / connectors</option>
+      <option value="__any__">Has any plugin or connector</option>
+    </select>
+  </div>
+  <div class="grid" id="grid"></div>
+  <footer>Not affiliated with xAI. Quotes paraphrased from public posts.</footer>
+  <script src="cases1.js"></script>
+  <script src="cases2.js"></script>
+  <script src="cases3.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
