@@ -1,0 +1,10 @@
+window.CASES = (window.CASES||[]).concat([
+{title:"Family operations bot", desc:"Manage kids school emails, calendars, permission slips, and daily rundowns.", cat:"Personal", kind:"influencer", who:"Matthew Berman", handle:"MatthewBerman", url:"https://x.com/MatthewBerman/status/2094500928850387073"},
+{title:"Item seller bot", desc:"Photograph stuff around the house; bot writes listings and runs the sale.", cat:"Personal", kind:"influencer", who:"Matthew Berman", handle:"MatthewBerman", url:"https://x.com/MatthewBerman/status/2094500928850387073"},
+{title:"Accounting bot", desc:"Submit invoices, review spending, remind about bills, help with taxes.", cat:"Work", kind:"influencer", who:"Nic Cruz Patane", handle:"niccruzpatane", url:"https://x.com/niccruzpatane/status/2093811292440314310"},
+{title:"Be Happier bot", desc:"Read email, calendar, Slack; suggest three concrete things that would make life better.", cat:"Personal", kind:"curated", who:"Lenny Rachitsky", handle:"lennysan", url:"https://x.com/lennysan/status/2092283728877990128"},
+{title:"Personal CFO", desc:"Banks and cards connected. Morning question: can I cover what is coming?", cat:"Personal", kind:"curated", who:"Teslaconomics", handle:"Teslaconomics", url:"https://x.com/Teslaconomics/status/2092837438146351407"},
+{title:"Supreme Court of the family", desc:"Dictate a kid fight. Formal deadpan ruling. Dad drinks coffee.", cat:"Fun", kind:"giveaway", who:"Mohammad Milly", handle:"Mohammad_milly", url:"https://x.com/Mohammad_milly/status/2093864086358421737"},
+{title:"Fridge-camera grocery closer", desc:"Camera on the fridge plus menu. Missing items ordered. Human last look before pay.", cat:"Personal", kind:"giveaway", who:"FSD in Denmark", handle:"FSDEurope", url:"https://x.com/FSDEurope/status/2094030014543011988"},
+{title:"Five minutes after wheels-down", desc:"Pilot. Twilio-call hotel transport after landing. Book BJJ drop-ins near layover.", cat:"Personal", kind:"giveaway", who:"Aloft AI", handle:"aloft_ai", url:"https://x.com/aloft_ai/status/2094059471387418821"}
+]);
